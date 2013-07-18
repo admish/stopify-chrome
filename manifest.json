@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+
+	"name": "Tamponify (Bypass Spotify Web Player)",
+	"description": "Allows Spotify users to bypass the 'Spotify Web Player' and direct all links on the web to the official desktop app.",
+	"version": "2.0.0",
+	"homepage_url": "http://admchrysler.com",
+
+	"background": {
+		"scripts": [ "pageaction.js" ]
+	},
+
+	"content_scripts": [ {
+		"all_frames": true,
+		"js": [ "jquery-1.4.4.js" , "contentscript.js" ],
+		"matches": [ "http://*/*", "https://*/*" ]
+	} ],
+	
+	"permissions" : [
+		"tabs",
+		"webRequest"
+	],
+	
+	"page_action": {
+    "default_icon": { 
+      "19": "images/icon19.png",
+      "38": "images/icon38.png"
+    },
+	
+    "default_title": "Push to Spotify Desktop"
+  },
+  
+	"icons": {
+		"48": 	"images/icon48.png",
+		"128": 	"images/icon128.png"
+	}
+  
+}
