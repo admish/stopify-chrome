@@ -1,9 +1,9 @@
 {
-  "manifest_version": 2,
+	"manifest_version": 2,
 
-	"name": "Tamponify (Bypass Spotify Web Player)",
+	"name": "Stopify",
 	"description": "Allows Spotify users to bypass the 'Spotify Web Player' and direct all links on the web to the official desktop app.",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"homepage_url": "http://admchrysler.com",
 
 	"background": {
